@@ -1,0 +1,156 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+
+  background: hsl(273, 75%, 66%);
+  background: -moz-linear-gradient(top, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+  background: -webkit-linear-gradient(top, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.faqs {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 920px;
+  min-height: 510px;
+
+  background: url(./../../images/illustration-woman-online-desktop.svg) ,url(./../../images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 50%, 100%;
+  background-position: -85px 50%, -545px 70%;
+  background-color: white;
+
+  border: none;
+  border-radius: 20px;
+
+  -webkit-box-shadow: 5px 10px 20px 0px rgba(0,0,0,0.2); 
+  box-shadow: 5px 10px 20px 0px rgba(0,0,0,0.2);
+}
+
+.faqs .box {
+  position: absolute;
+
+  top: 40%;
+  left: -100px;
+}
+
+.faqs .sc-content {
+  width: 100%;
+  max-width: 460px;
+  margin-left: auto;
+
+  padding: 15px;
+}
+
+.faqs .sc-content h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: hsl(238, 29%, 16%);
+}
+
+.faqs .sc-content .acd-group {
+  width: 100%;
+  max-width: 350px;
+}
+
+.faqs .sc-content .acd-group .acd {
+  border-bottom: solid 1px hsl(240, 5%, 91%);
+}
+
+.faqs .sc-content .acd-group .acd .acd-title {
+  position: relative;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  color: hsl(237, 12%, 33%);
+
+  -webkit-transition: color 200ms;
+  -moz-transition: color 200ms;
+  -ms-transition: color 200ms;
+  transition: color 200ms;
+}
+
+.faqs .sc-content .acd-group .acd .acd-title:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.faqs .sc-content .acd-group .acd .acd-title.active {
+  font-weight: 700;
+}
+
+.faqs .sc-content .acd-group .acd .acd-title:after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  -webkit-transition: transform 200ms;
+  -moz-transition: transform 200ms;
+  -ms-transition: transform 200ms;
+  transition: transform 200ms;
+  
+  display: inline-block;
+  width: 10px;
+  height: 7px;
+
+  background-image: url(./../../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 7px;
+}
+
+.faqs .sc-content .acd-group .acd .acd-title.active:after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -moz-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faqs .sc-content .acd-group .acd .acd-content {
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+
+  padding-bottom: 15px;
+
+  display: none;
+}
